@@ -1,16 +1,16 @@
-# Revert expiration date policy in rooms
+# Remove expiration date policy in rooms
 
 ## What is this?
 
-A command line tool to remove expiration polices for rooms within a parent and its first level children
+A command line tool to remove expiration date polices for rooms within a parent and their first level children.
 
 This is based on [DRACOON Commander RS](https://github.com/unbekanntes-pferd/dccmd-rs) - an awesome project to use DRACOON via CLI and [dco3](https://github.com/unbekanntes-pferd/dco3) - a wrapper around the DRACOON API by [Octavio Simone](https://github.com/unbekanntes-pferd).
 
 ## How to use it?
 
 Download the release or build from source.
-Use the following command to remove expiration polices for rooms within a parent and its first level children.
-The number is the parent room of rooms where the expiration date policy should be removed.
+Use the following command to remove expiration polices for rooms within a parent and their first level children.
+The number is the parent room id of the rooms where the expiration date policy should be removed (set to 0).
 
 ```
 remove-expiration run YOUR.DRACOON.COM/ 149
