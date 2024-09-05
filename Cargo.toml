@@ -1,0 +1,37 @@
+[package]
+name = "remove-expiration"
+version = "0.1.2"
+edition = "2021"
+description = "A command line tool to remove expiration polices for rooms within a parent and its first level children"
+authors = ["Ralf Böhler"]
+license = "MIT"
+readme = "README.md"
+
+[[bin]]
+name = "remove-expiration"
+path = "src/main.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# DRACOON API 
+dco3 = "0.15.1"
+
+# CLI helpers
+clap = { version = "4.5.8", features = ["derive"] }
+console = "0.15.8"
+
+# async runtime and utils
+tokio = { version = "1.38.0", features = ["full"] }
+futures-util = "0.3.30"
+
+# Logging and tracing
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+chrono = "0.4.38"
+thiserror = "1.0.61"
+keyring = { version = "3.2.1", features = ["apple-native", "windows-native", "sync-secret-service", "vendored"] }
+dialoguer = "0.11.0"
+futures = "0.3.30"
+
+[build-dependencies]
+dotenv = "0.15"

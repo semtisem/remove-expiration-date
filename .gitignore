@@ -1,0 +1,4 @@
+/target
+.env
+syncoon.log
+env_vars.rs
